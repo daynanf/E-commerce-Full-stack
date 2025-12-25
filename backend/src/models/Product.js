@@ -33,7 +33,7 @@ const productSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
-        required: false // Optional: if we want to track who created it
+        required: false 
     }
 }, {
     timestamps: true

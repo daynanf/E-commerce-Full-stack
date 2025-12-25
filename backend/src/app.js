@@ -14,16 +14,16 @@ const orderRoutes = require('./routes/order.routes');
 
 const app = express();
 
-// Middleware
+
 app.use(express.json());
 app.use(cors());
 app.use(helmet());
 app.use(morgan('dev'));
 
-// Database Connection
+
 connectDB();
 
-// Routes
+
 app.use('/auth', authRoutes);
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);

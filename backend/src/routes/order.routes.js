@@ -4,7 +4,7 @@ const { protect } = require('../middlewares/auth.middleware');
 
 const router = express.Router();
 
-router.use(protect); // All order routes are protected
+router.use(protect); 
 
 router.route('/')
     .post(placeOrder)
